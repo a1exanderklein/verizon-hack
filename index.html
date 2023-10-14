@@ -12,27 +12,15 @@
         <h1>Hello, I'm Phone Guru!</h1>
         <h3>How experienced are you with smartphones?</h3>
         <!-- Experience level determines prompt path for the AI -->
-        <button id="beginnerBtn" onclick="goSection('beginner')">I'm not familiar at all</button>
-        <button id="intermediateBtn" onclick="goSection('intermediate')">Somewhat comfortable</button>
-        <button id="expertBtn" onclick="goSection('expert')">I'm very experienced</button>
+        <button id="beginnerBtn" onclick="setExperience('beginner')">I'm not familiar at all</button>
+        <button id="intermediateBtn" onclick="setExperience('intermediate')">Somewhat comfortable</button>
+        <button id="expertBtn" onclick="setExperience('expert')">I'm very experienced</button>
     </section>
 
-    <section id="beginner" style="display: none;">
-        <h1>You're in the "Not Familiar" Path</h1>
-        <!-- Add questions and buttons Beginner path -->
+    <section id="questionPhoneGoal" style="display: none;">
+        <h1>What are you looking for in a phone?</h1>
         <button onclick="goBack()">Go Back</button>
     </section>
-    
-    <section id="intermediate" style="display: none;">
-        <h1>You're in the "Somewhat Comfortable" Path</h1>
-        <!-- Add questions and buttons for this path -->
-        <button onclick="goBack()">Go Back</button>
-    </section>
-    
-    <section id="expert" style="display: none;">
-        <h1>You're in the "Very Experienced" Path</h1>
-        <!-- Add questions and buttons for this path -->
-        <button onclick="goBack()">Go Back</button>
-    </section>
+
 </body>
 </html>

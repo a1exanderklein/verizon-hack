@@ -2,6 +2,14 @@
 let currentSectionId = 'questionIntro'; // Initialize with the ID of the home page question
 let prevSectionId = '';
 
+let experience = '';
+
+function setExperience(level) {
+    experience = level;
+    console.log(experience);
+    goSection('questionPhoneGoal'); // Navigate to the 'questionPhoneGoal' section
+}
+
 function goSection(id) {
     // Hide the current section
     document.getElementById(currentSectionId).style.display = 'none';
@@ -21,11 +29,15 @@ function goBack() {
     // Update the current section ID to the previous section's ID
     if (currentSectionId === 'questionIntro') {
         // If already at the initial section, don't change the ID
-    } else if (currentSectionId === 'beginner') {
-        currentSectionId = 'questionIntro';
-    } else if (currentSectionId === 'intermediate') {
-        currentSectionId = 'questionIntro';
-    } else if (currentSectionId === 'expert') {
+    }
+    // else if (currentSectionId === 'beginner') {
+    //     currentSectionId = 'questionIntro';
+    // } else if (currentSectionId === 'intermediate') {
+    //     currentSectionId = 'questionIntro';
+    // } else if (currentSectionId === 'expert') {
+    //     currentSectionId = 'questionIntro';
+    // }
+    else if (currentSectionId === 'questionPhoneGoal') {
         currentSectionId = 'questionIntro';
     }
 
