@@ -8,28 +8,31 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <section id="question-level">
+    <section id="questionIntro">
         <h1>Hello, I'm Phone Guru!</h1>
         <h3>How experienced are you with smartphones?</h3>
         <!-- Experience level determines prompt path for the AI -->
-        <button id="beginnerBtn" onclick="showSection('beginner')">I'm not familiar at all</button>
-        <button id="intermediateBtn" onclick="showSection('intermediate')">Somewhat comfortable</button>
-        <button id="expertBtn" onclick="showSection('expert')">I'm very experienced</button>
+        <button id="beginnerBtn" onclick="goSection('beginner')">I'm not familiar at all</button>
+        <button id="intermediateBtn" onclick="goSection('intermediate')">Somewhat comfortable</button>
+        <button id="expertBtn" onclick="goSection('expert')">I'm very experienced</button>
     </section>
 
     <section id="beginner" style="display: none;">
         <h1>You're in the "Not Familiar" Path</h1>
         <!-- Add questions and buttons Beginner path -->
+        <button onclick="goBack()">Go Back</button>
     </section>
     
     <section id="intermediate" style="display: none;">
         <h1>You're in the "Somewhat Comfortable" Path</h1>
         <!-- Add questions and buttons for this path -->
+        <button onclick="goBack()">Go Back</button>
     </section>
     
     <section id="expert" style="display: none;">
         <h1>You're in the "Very Experienced" Path</h1>
         <!-- Add questions and buttons for this path -->
+        <button onclick="goBack()">Go Back</button>
     </section>
 </body>
 </html>

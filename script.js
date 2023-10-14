@@ -1,3 +1,38 @@
+//Button Mechanics for Section navigation
+let currentSectionId = 'questionIntro'; // Initialize with the ID of the home page question
+let prevSectionId = '';
+
+function goSection(id) {
+    // Hide the current section
+    document.getElementById(currentSectionId).style.display = 'none';
+
+    // Update the current section ID to the new section's ID
+    prevSectionId = currentSectionId;
+    currentSectionId = id;
+
+    // Show the selected section
+    document.getElementById(currentSectionId).style.display = 'block';
+}
+
+function goBack() {
+    // Hide the current section
+    document.getElementById(currentSectionId).style.display = 'none';
+
+    // Update the current section ID to the previous section's ID
+    if (currentSectionId === 'questionIntro') {
+        // If already at the initial section, don't change the ID
+    } else if (currentSectionId === 'beginner') {
+        currentSectionId = 'questionIntro';
+    } else if (currentSectionId === 'intermediate') {
+        currentSectionId = 'questionIntro';
+    } else if (currentSectionId === 'expert') {
+        currentSectionId = 'questionIntro';
+    }
+
+    // Show the previous section
+    document.getElementById(currentSectionId).style.display = 'block';
+}
+
 const apiKey = 'bwjqON0lPNGXld4_-jtlgl9lC_M_xOKIxD0KU50THCNs09-VpuvKDihbJXLwQ_3tm4ZYdQ.'; // Replace with your actual API key
 document.getElementById('askButton').addEventListener('click', () => {
     const question = document.getElementById('questionInput').value;
