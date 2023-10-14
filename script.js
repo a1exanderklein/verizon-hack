@@ -4,6 +4,8 @@ let prevSectionId = '';
 
 let experience = '';
 
+let phoneGoal = '';
+
 function setExperience(level) {
     experience = level;
     console.log(experience);
@@ -44,6 +46,29 @@ function goBack() {
     // Show the previous section
     document.getElementById(currentSectionId).style.display = 'block';
 }
+
+function checkEnter(event) {
+    if (event.key === "Enter") {
+        submitPhoneGoal(); // Call the submission function when Enter is pressed
+    }
+}
+
+function submitPhoneGoal() {
+    // Get the user's input from the input field
+    phoneGoal = document.getElementById('phoneGoalInput').value;
+
+    // You can do something with the user's input here
+    console.log('User entered: ' + phoneGoal);
+
+    // If you want to continue to the next step or section, you can call goSection here
+    // Example: goSection('nextSectionId');
+
+    // Clear the input field
+    document.getElementById('phoneGoalInput').value = '';
+
+    // You can add more logic here based on the user's input
+}
+
 
 const apiKey = 'bwjqON0lPNGXld4_-jtlgl9lC_M_xOKIxD0KU50THCNs09-VpuvKDihbJXLwQ_3tm4ZYdQ.'; // Replace with your actual API key
 document.getElementById('askButton').addEventListener('click', () => {
