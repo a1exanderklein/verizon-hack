@@ -33,7 +33,7 @@ function setPrice(Newprice, id) {
 }
 
 function setStorage(NewStorage, id) {
-    if (price !== ''){
+    if (storage !== ''){
         document.getElementById(currentStorageID).style.color = '#383434';
         document.getElementById(currentStorageID).style.border = '5px solid #383434';
 
@@ -47,7 +47,7 @@ function setStorage(NewStorage, id) {
 }
 
 function setBrand(NewBrand, id) {
-    if (price !== ''){
+    if (brand !== ''){
         document.getElementById(currentBrandID).style.color = '#383434';
         document.getElementById(currentBrandID).style.border = '5px solid #383434';
 
@@ -61,7 +61,7 @@ function setBrand(NewBrand, id) {
 }
 
 function setColor(NewColor, id) {
-    if (price !== ''){
+    if (color !== ''){
         document.getElementById(currentColorID).style.color = '#383434';
         document.getElementById(currentColorID).style.border = '5px solid #383434';
 
