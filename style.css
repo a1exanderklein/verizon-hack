@@ -40,6 +40,7 @@ body {
 
 .button-container {
     display: flex;
+    flex-direction: row;
 }
 
 .choice-container {
@@ -50,8 +51,15 @@ body {
 
 #backBtn {
     position: absolute;
-    bottom: 5%; /* Adjust this percentage to your preference */
-    right: 1%; /* Adjust this percentage to your preference */
+    bottom: 5%; 
+    right: 1%;
+}
+
+#beginnerBtn,
+#intermediateBtn,
+#expertBtn {
+    /* width: auto;  */
+    margin-right: 10px;
 }
 
 button {
