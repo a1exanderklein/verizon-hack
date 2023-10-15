@@ -1,15 +1,18 @@
 //Button Mechanics for Section navigation
 let currentSectionId = 'questionIntro'; // Initialize with the ID of the home page question
 let prevSectionId = '';
-
 let experience = '';
-
 let phoneGoal = '';
+let price = '';
 
 function setExperience(level) {
     experience = level;
     console.log(experience);
     goSection('questionPhoneGoal'); // Navigate to the 'questionPhoneGoal' section
+}
+
+function setPrice(price, id) {
+    document.getElementById(id).style.color = '#ee0000';
 }
 
 function goSection(id) {
