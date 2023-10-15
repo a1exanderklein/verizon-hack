@@ -27,30 +27,45 @@
     </section>
 
     <section id="questionPhoneGoal" style="display: none;">
-        <h1>What are you looking for in a phone?</h1>
-        <div id="budget">
-            <button id="priceLow" onclick="setPrice('Less than $900', 'priceLow')">Less than $900</button>
-            <button id="priceMedium" onclick="setPrice('$900 - $1299', 'priceMedium')">$900-1299</button>
-            <button id="priceHigh" onclick="setPrice('$1300 - $2000', 'priceHigh')">$1300-$2000</button>
-        <div id="storage">
-
-        </div>
-        <div id="brand">
-
-        </div>
-        <div id="color">
-
-        </div>
-        <div id="freeResponse">
-
-        </div>
-        <input type="text" id="phoneGoalInput" placeholder="I want a phone for...">
-        <button type="button" onclick="processPhoneGoal()">Enter</button>
-        <button type="button" onclick="goBack()">Go Back</button>
-        <div>
-            <button>"Just texting and calling"</button>
-            <button>"A stellar camera"</button>
-            <button>"A long battery life"</button>
+        <div class="choice-container">
+            <h1>What are you looking for in a phone?</h1>
+            <div id="budget">
+                <h3>What's your budget?</h3>
+                <button id="priceLow" onclick="setPrice('Less than $900', 'priceLow')">Less than $900</button>
+                <button id="priceMedium" onclick="setPrice('$900 - $1299', 'priceMedium')">$900-1299</button>
+                <button id="priceHigh" onclick="setPrice('$1300 - $2000', 'priceHigh')">$1300-$2000</button>
+            </div>
+            <div id="storage">
+                <h3>How much storage do you want?</h3>
+                <button id="128">128 GB</button>
+                <button id="256">256 GB</button>
+                <button id="512">512 GB</button>
+                <button id="1">1 TB</button>
+            </div>
+            <div id="brand">
+                <h3>What brand would you prefer?</h3>
+                <button id="apple">Apple</button>
+                <button id="samsung">Samsung</button>
+                <button id="google">Google</button>
+            </div>
+            <div id="color">
+                <h3>Which color would you like?</h3>
+                <button id="black">Black</button>
+                <button id="white">White</button>
+                <button id="blue">Blue</button>
+                <button id="cream">Yellow</button>
+                <button id="green">Green</button>
+            </div>
+            <div id="freeResponse">
+                <h3>Are there any other features you want?</h3>
+                <input type="text" id="phoneGoalInput" placeholder="I want a phone for...">
+                <button type="button" onclick="processPhoneGoal()">Enter</button>
+                <div>
+                    <button>"Just texting and calling"</button>
+                    <button>"A stellar camera"</button>
+                    <button>"A long battery life"</button>
+                </div>
+            </div>
         </div>
         <section id="phoneGoalResponse" style="display: none;">
             <h1>Response:</h1>
