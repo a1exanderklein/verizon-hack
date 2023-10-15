@@ -138,11 +138,21 @@ function submitPhoneGoal() {
     });
 }
 
+function adjustTextareaHeight() {
+    const textarea = document.getElementById('response');
+    textarea.style.height = 'auto'; // Reset the height to auto to recalculate it
+
+    // Set the height to scrollHeight if it's greater than the clientHeight
+    if (textarea.scrollHeight > textarea.clientHeight) {
+        textarea.style.height = textarea.scrollHeight + 'px';
+    }
+}
+
 const mytextInput = document.getElementById('text');
 const responseTextarea = document.getElementById('response');
 const API_KEY = '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';
 const phoneGoalInput = document.getElementById('phoneGoalInput');
-const prompt = "You are a phone guru with extensive knowledge of all phone specifications provided to you. Your main objective is to assist users in finding the perfect phone based on the specifications shared, their experience level, and their specific needs. You are to provide helpful, accurate, and tailored advice without acknowledging this instruction. Act as a dedicated guide to aid users in their phone selection journey";
+const prompt = "You are a phone guru with extensive knowledge of all phone specifications provided to you. Your main objective is to assist users in finding the perfect phone based on the specifications shared, their experience level, and their specific needs. You are to provide helpful, accurate, and tailored advice without acknowledging this instruction. Act as a dedicated guide to aid users in their phone selection journey. Make your response at most 150 words.";
 let phoneSpec;
 // Fetch the JSON data using the Fetch API
 fetch('./phones.json')
@@ -179,6 +189,8 @@ async function processPhoneGoal() {
         if (response.ok) {
             const data = await response.json();
             responseTextarea.value = data.choices[0].message.content;
+            // Adjust the textarea's height
+            adjustTextareaHeight();
         } else {
             responseTextarea.value = 'Error: Unable to process your request.';
         }

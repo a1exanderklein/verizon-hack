@@ -14,7 +14,7 @@
         </div>
         <div class="text-container">
             <div class="heading-container">
-                <h1 style="font-size: 70px;">Hello, I'm Phone Guru!</h1>
+                <h1 style="font-size: 70px; margin-bottom: -15px;">Hello, I'm Phone Guru!</h1>
                 <h3>How experienced are you with smartphones?</h3>
             </div>
             <!-- Experience level determines prompt path for the AI -->
@@ -29,7 +29,7 @@
     <section id="questionPhoneGoal" style="display: none;">
         <div class="left-container">
             <div class="choice-container">
-                <h1>What are you looking for in a phone?</h1>
+                <h1 style="margin-bottom: -15px;">What are you looking for in a phone?</h1>
                 <div id="budget">
                     <h3>What's your budget?</h3>
                     <button id="priceLow" onclick="setPrice('Less than $900', 'priceLow')">Less than $900</button>
@@ -62,12 +62,13 @@
                     <input type="text" id="phoneGoalInput" placeholder="I want a phone for...">
                 </div>
                 <div style="margin-top: 30px;">
-                    <button>"Just texting and calling"</button>
-                    <button>"A stellar camera"</button>
-                    <button>"A long battery life"</button>
+                    <button id="text&call"onclick="setSpec('just texting and calling', 'text&call')">"Just texting and calling"</button>
+                    <button id="camera"onclick="setSpec('a stellar camera', 'camera')">"A stellar camera"</button>
+                    <button id="battery"onclick="setSpec('a long battery life', 'battery')">"A long battery life"</button>
                 </div>
                 <div>
                     <button id="endBtn" onclick="processPhoneGoal()">Find me my perfect phone!</button>
+                    <button id="backBtn" onclick="goBack()">Back</button>
                 </div>
             </div>
         </div>
@@ -75,11 +76,10 @@
         <div class="right-container">
             <section id="phoneGoalResponse" style="display: none;">
                 <div id="responseContainer">
-                    <h1>Phone Guru:</h1>
+                    <h1 style="display: flex; align-items: center;"><img src="assets/guru.png" alt="Phone Guru" style="height: 10vh; margin-right: 10px;">Phone Guru Says:</h1>
                     <textarea id="response" readonly></textarea>
                 </div>
             </section>
-            <button id="backBtn" onclick="goBack()">Back</button>
         </div>
     </section>
 </body>
