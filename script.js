@@ -146,47 +146,36 @@ fetch('./phones.json')
 async function processPhoneGoal() {
     submitPhoneGoal();
     const mytext = phoneGoal;
-    if (mytext) {
-        try {
-            const response = await fetch('https://api.openai.com/v1/chat/completions', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${API_KEY}`,
-                },
-                body: JSON.stringify({
-                    model: 'gpt-4',
-                    messages: [{ role: 'user', content: phoneSpec + '\n\n' + prompt + '\n\n' + "The user's experience is " + experience + '\n\n' + "they are looking for a phone within the " + price + " price range" + " with a storage plan of " + storage + ", they prefer their phone brand to be " + brand + " and the color to be " + color + '\n\n' + mytext }],
-                    temperature: 1.0,
-                    top_p: 0.7,
-                    n: 1,
-                    stream: false,
-                    presence_penalty: 0,
-                    frequency_penalty: 0,
-                }),
-            });
+    try {
+        const response = await fetch('https://api.openai.com/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${API_KEY}`,
+            },
+            body: JSON.stringify({
+                model: 'gpt-4',
+                messages: [{ role: 'user', content: phoneSpec + '\n\n' + prompt + '\n\n' + "The user's experience is " + experience + '\n\n' + "they are looking for a phone within the " + price + " price range" + " with a storage plan of " + storage + ", they prefer their phone brand to be " + brand + " and the color to be " + color + '\n\n' + mytext }],
+                temperature: 1.0,
+                top_p: 0.7,
+                n: 1,
+                stream: false,
+                presence_penalty: 0,
+                frequency_penalty: 0,
+            }),
+        });
 
-            if (response.ok) {
-                const data = await response.json();
-                responseTextarea.value = data.choices[0].message.content;
-            } else {
-                responseTextarea.value = 'Error: Unable to process your request.';
-            }
-        } catch (error) {
-            console.error(error);
+        if (response.ok) {
+            const data = await response.json();
+            responseTextarea.value = data.choices[0].message.content;
+        } else {
             responseTextarea.value = 'Error: Unable to process your request.';
         }
-    }
+    } catch (error) {
+        console.error(error);
+        responseTextarea.value = 'Error: Unable to process your request.';
 }
-
-// Attach the event listener
-phoneGoalInput.addEventListener('keydown', async (e) => {
-    if (e.key === "Enter") {
-        // submitPhoneGoal(); // Call the submission function when Enter is pressed
-        e.preventDefault();  
-        await processPhoneGoal();
-    }
-});
+}
 
 // Call the function elsewhere
 // processPhoneGoal();
