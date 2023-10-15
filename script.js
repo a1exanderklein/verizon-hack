@@ -4,6 +4,7 @@ let prevSectionId = '';
 let experience = '';
 let phoneGoal = '';
 let price = '';
+let currentPriceId = '';
 
 function setExperience(level) {
     experience = level;
@@ -11,8 +12,18 @@ function setExperience(level) {
     goSection('questionPhoneGoal'); // Navigate to the 'questionPhoneGoal' section
 }
 
-function setPrice(price, id) {
+function setPrice(Newprice, id) {
+    if (price !== ''){
+        document.getElementById(currentPriceId).style.color = '#383434';
+        document.getElementById(currentPriceId).style.border = '5px solid #383434';
+
+    }
+    
+    price = Newprice; 
     document.getElementById(id).style.color = '#ee0000';
+    document.getElementById(id).style.border = '5px solid #ee0000';
+
+    currentPriceId = id;
 }
 
 function goSection(id) {
