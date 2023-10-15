@@ -1,6 +1,11 @@
 [
     {
         "model": "iPhone 15",
+        "price": {
+          "128 GB": 829.99,
+          "256GB": 929.99,
+          "512GB": 1129.99
+        },
         "design": {
             "colors": ["Black", "Blue", "Green", "Yellow", "Pink"],
             "height": "5.81 in",
@@ -45,6 +50,12 @@
     },
     {
         "model": "iPhone 15 Pro",
+        "price": {
+          "128GB": 999.99,
+          "256GB": 1099.99,
+          "512GB": 1299.99,
+          "1TB": 1499.99
+        },
         "design": {
             "colors": ["Black Titanium", "White Titanium", "Blue Titanium", "Natural Titanium"],
             "height": "5.77 in",
@@ -83,6 +94,11 @@
     },
     {
         "model": "iPhone 15 Pro Max",
+        "price": {
+          "256GB": 1199.99,
+          "512GB": 1399.99,
+          "1TB": 1599.99
+        },
         "design": {
           "colors": ["Black Titanium", "White Titanium", "Blue Titanium", "Natural Titanium"],
           "height": "6.29 in.",
@@ -125,6 +141,11 @@
         }
       },{
         "model": "iPhone 14",
+        "price": {
+          "128GB": 729.99,
+          "256GB": 829.99,
+          "512GB": 1029.99
+        },
         "design": {
           "colors": ["Midnight", "Purple", "Starlight", "(PRODUCT)RED", "Blue", "Yellow"],
           "depth": "0.31 in.",
@@ -167,6 +188,12 @@
       },
       {
         "model": "iPhone 14 Pro",
+        "price": {
+          "128GB": 899.99,
+          "256GB": 999.99,
+          "512GB": 1199.99,
+          "1TB": 1399.99
+        },
         "design": {
           "colors": ["Space Black", "Silver", "Gold", "Deep Purple"],
           "depth": "0.31 in.",
@@ -214,6 +241,10 @@
       },
     {
       "model": "Samsung Galaxy Z Fold 5",
+      "price": {
+        "256GB": 1799.99,
+        "512GB": 1919.99
+      },
       "design": {
         "colors": ["Phantom Black", "Cream", "Icy Blue"],
         "height": "6.10 in",
@@ -301,6 +332,10 @@
       }
     },{
       "model": "Samsung Galaxy Z Flip 5",
+      "price": {
+        "256GB": 999.99,
+        "512GB": 1119.99
+      },
       "design": {
         "colors": ["Graphite", "Lavender", "Cream", "Mint"],
         "dimensions": {
