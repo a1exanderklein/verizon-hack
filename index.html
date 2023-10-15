@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phone GURU</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </head>
 <body>
     <section id="questionIntro">
@@ -19,9 +19,16 @@
 
     <section id="questionPhoneGoal" style="display: none;">
         <h1>What are you looking for in a phone?</h1>
-        <input type="text" id="phoneGoalInput" onkeydown="checkEnter(event)" placeholder="I want a phone for...">
+        <input type="text" id="phoneGoalInput" placeholder="I want a phone for...">
+        <button type="button" onclick="goBack()">Go Back</button>
+    </section>
+
+    <section id="phoneGoalResponse" style="display: none;">
+        <h1>Response:</h1>
+        <textarea id="response" readonly></textarea>
         <button onclick="goBack()">Go Back</button>
     </section>
 
 </body>
+<script src="script.js"></script>
 </html>
