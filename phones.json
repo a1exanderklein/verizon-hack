@@ -1,0 +1,435 @@
+[
+    {
+        "model": "iPhone 15",
+        "price": {
+          "128 GB": 829.99,
+          "256GB": 929.99,
+          "512GB": 1129.99
+        },
+        "design": {
+            "colors": ["Black", "Blue", "Green", "Yellow", "Pink"],
+            "height": "5.81 in",
+            "width": "2.82 in",
+            "depth": "0.31 in",
+            "weight": "6.02 oz"
+        },
+        "accessibility": {
+            "overall": ["Accessibility Shortcut", "Siri", "Guided Access", "Per App Setting"],
+            "auditory": ["Made for iPhone hearing devices", "Sound Recognition", "Headphone Accommodations", "Live Captions"],
+            "mobilityCognitive": ["Voice Control", "Switch Control", "AssistiveTouch", "Back Tap"],
+            "hearingAidCompatibility": "M3/T4",
+            "visual": ["VoiceOver", "Zoom", "Color Filters", "Spoken Content"]
+        },
+        "battery": {
+            "videoPlayback": "Up to 20 hrs; Streamed: Up to 16 hrs",
+            "type": "Built-in rechargeable lithium-ion battery",
+            "usageTime": "Audio playback: Up to 80 hrs"
+        },
+        "network": {
+            "globalRoaming": [
+                "FDD-LTE (1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 17, 18, 19, 20, 25, 26, 28, 29, 30, 32, 66, 71)",
+                "TD‐LTE (34, 38, 39, 40, 41, 42, 46, 48, 53)",
+                "UMTS/HSPA+/DC-HSDPA (850, 900, 1700/2100, 1900, 2100 MHz)",
+                "GSM/EDGE (850, 900, 1800, 1900 Mhz)"
+            ],
+            "5GNationwide": ["n1", "n2", "n3", "n5", "n7", "n8", "n12", "n14", "n20", "n25", "n26", "n28", "n29", "n30", "n38", "n40", "n41", "n48", "n53", "n66", "n70", "n71", "n77", "n78", "n79"],
+            "5GUltraWideBand": ["n258", "n260", "n261"]
+        },
+        "camera": {
+            "rearCamera": "48MP Main: 26 mm, ƒ/1.6 aperture, sensor‐shift optical image stabilization, 100% Focus Pixels, support for super-high-resolution photos (24MP and 48MP)",
+            "frontCamera": "12MP with ƒ/1.9 aperture TrueDepth front camera"
+        },
+        "performance": {
+            "storage": ["128 GB", "256GB", "512GB"],
+            "os": "Apple iOS"
+        },
+        "wifi": "Yes",
+        "display": {
+            "screen": "Super Retina XDR display; 6.1-inch (diagonal) all-screen OLED display; 2556-by-1179-pixel resolution at 460 ppi"
+        }
+    },
+    {
+        "model": "iPhone 15 Pro",
+        "price": {
+          "128GB": 999.99,
+          "256GB": 1099.99,
+          "512GB": 1299.99,
+          "1TB": 1499.99
+        },
+        "design": {
+            "colors": ["Black Titanium", "White Titanium", "Blue Titanium", "Natural Titanium"],
+            "height": "5.77 in",
+            "width": "2.78 in",
+            "depth": "0.32 in",
+            "weight": "6.6 oz"
+        },
+        "accessibility": {
+            "overall": ["Accessibility Shortcut", "Siri", "Guided Access", "Per App Setting"],
+            "auditory": ["Made for iPhone hearing devices", "Sound Recognition", "Headphone Accommodations", "Live Captions"],
+            "mobilityCognitive": ["Voice Control", "Switch Control", "AssistiveTouch", "Back Tap"],
+            "hearingAidCompatibility": "M3/T4",
+            "visual": ["VoiceOver", "Zoom", "Color Filters", "Spoken Content"]
+        },
+        "battery": {
+            "videoPlayback": "Up to 23 hrs; Streamed: Up to 20 hrs",
+            "type": "Built-in rechargeable lithium-ion battery",
+            "usageTime": "Audio playback: Up to 75 hrs"
+        },
+        "network": {
+            "5GNationwide": ["n1", "n2", "n3", "n5", "n7", "n8", "n12", "n14", "n20", "n25", "n26", "n28", "n29", "n30", "n38", "n40", "n41", "n48", "n53", "n66", "n70", "n71", "n77", "n78", "n79"],
+            "5GUltraWideBand": ["n258", "n260", "n261"]
+        },
+        "camera": {
+            "rearCamera": "48MP Main: 24 mm, ƒ/1.78 aperture, second‐generation sensor‐shift optical image stabilization, 100% Focus Pixels, support for super‐high‐resolution photos (24MP and 48MP)",
+            "frontCamera": "12MP with ƒ/1.9 aperture TrueDepth front camera"
+        },
+        "performance": {
+            "storage": ["128GB", "256GB", "512GB", "1TB"],
+            "os": "Apple iOS"
+        },
+        "wifi": "Yes",
+        "display": {
+            "screen": "Super Retina XDR display; 6.1-inch (diagonal) all-screen OLED display; 2556-by-1179-pixel resolution at 460 ppi"
+        }
+    },
+    {
+        "model": "iPhone 15 Pro Max",
+        "price": {
+          "256GB": 1199.99,
+          "512GB": 1399.99,
+          "1TB": 1599.99
+        },
+        "design": {
+          "colors": ["Black Titanium", "White Titanium", "Blue Titanium", "Natural Titanium"],
+          "height": "6.29 in.",
+          "width": "3.02 in.",
+          "depth": "0.32 in.",
+          "weight": "7.81 oz."
+        },
+        "accessibility": {
+          "overall": ["Accessibility Shortcut", "Siri", "Guided Access", "Per App Setting"],
+          "mobilityCognitive": ["Voice Control", "Switch Control", "AssistiveTouch", "Back Tap"],
+          "hearingAidCompatibility": "M3/T4",
+          "visual": ["VoiceOver", "Zoom", "Color Filters", "Spoken Content"]
+        },
+        "network": {
+          "wiFi": "Yes",
+          "globalRoamingNetworks": {
+            "FDD-LTE": ["1", "2", "3", "4", "5", "7", "8", "12", "13", "14", "17", "18", "19", "20", "25", "26", "28", "29", "30", "32", "66", "71"],
+            "TD-LTE": ["34", "38", "39", "40", "41", "42", "46", "48", "53"],
+            "UMTS_HSPA_DC_HSDPA": ["850", "900", "1700/2100", "1900", "2100 MHz"],
+            "GSM_EDGE": ["850", "900", "1800", "1900 Mhz"]
+          },
+          "5GNationwide": ["n1", "n2", "n3", "n5", "n7", "n8", "n12", "n14", "n20", "n25", "n26", "n28", "n29", "n30", "n38", "n40", "n41", "n48", "n53", "n66", "n70", "n71", "n77", "n78", "n79"],
+          "5GUltraWideband": ["n258", "n260", "n261"]
+        },
+        "battery": {
+          "videoPlayback": "Up to 29 hrs; Streamed: Up to 25 hrs",
+          "type": "Built-in rechargeable lithium-ion battery",
+          "usageTime": "Audio playback: Up to 95 hrs"
+        },
+        "camera": {
+          "frontCamera": "12MP with ƒ/1.9 aperture TrueDepth front camera",
+          "rearCamera": "12MP Ultra Wide: 13 mm, ƒ/2.2 aperture and 120° field of view, 100% Focus Pixels"
+        },
+        "performance": {
+          "storage": ["256GB", "512GB", "1TB"],
+          "operatingSystem": "Apple iOS"
+        },
+        "display": {
+          "screen": "Super Retina XDR display | 6.7-inch (diagonal) all-screen OLED display | 2796-by-1290-pixel resolution at 460 ppi"
+        }
+      },{
+        "model": "iPhone 14",
+        "price": {
+          "128GB": 729.99,
+          "256GB": 829.99,
+          "512GB": 1029.99
+        },
+        "design": {
+          "colors": ["Midnight", "Purple", "Starlight", "(PRODUCT)RED", "Blue", "Yellow"],
+          "depth": "0.31 in.",
+          "width": "2.82 in.",
+          "weight": "6.07 oz.",
+          "height": "5.78 in."
+        },
+        "accessibility": {
+          "overall": ["Accessibility Shortcut", "Siri", "Guided Access", "Per App Setting"],
+          "auditory": ["Made for iPhone hearing devices", "Sound Recognition", "Headphone Accommodations", "Live Captions"],
+          "mobilityCognitive": ["Voice Control", "Switch Control", "AssistiveTouch", "Back Tap"],
+          "hearingAidCompatibility": "M3/T4",
+          "visual": ["VoiceOver", "Zoom", "Color Filters", "Spoken Content"]
+        },
+        "network": {
+          "wiFi": "Yes",
+          "FCCID": "BCG-E3997A",
+          "globalRoamingNetworks": {
+            "LTE Roaming": ["1", "3", "7", "20", "28", "12", "26"],
+            "GSM_UMTS": ["850", "900", "1700/2100", "1900", "2100 MHz"],
+            "GSM_EDGE": ["850", "900", "1800", "1900 Mhz"]
+          },
+          "5GUltraWideband": ["n260", "n261", "n77"]
+        },
+        "battery": {
+          "videoPlayback": "Up to 20 hrs; Streamed: Up to 16 hrs.",
+          "type": "Built-in rechargeable lithium-ion battery",
+          "usageTime": "Audio playback: Up to 80 hrs."
+        },
+        "camera": {
+          "rearCamera": "12MP Main: 26 mm, ƒ/1.5 aperture, sensor-shift optical image stabilization, seven-element lens, 100% Focus Pixels"
+        },
+        "performance": {
+          "storage": ["128GB", "256GB", "512GB"],
+          "operatingSystem": "Apple iOS"
+        },
+        "display": {
+          "screen": "Super Retina XDR display; 6.1-inch (diagonal) all-screen OLED display; 2532-by-1170-pixel resolution at 460 ppi"
+        }
+      },
+      {
+        "model": "iPhone 14 Pro",
+        "price": {
+          "128GB": 899.99,
+          "256GB": 999.99,
+          "512GB": 1199.99,
+          "1TB": 1399.99
+        },
+        "design": {
+          "colors": ["Space Black", "Silver", "Gold", "Deep Purple"],
+          "depth": "0.31 in.",
+          "width": "2.81 in.",
+          "weight": "7.27 oz.",
+          "height": "5.81 in."
+        },
+        "accessibility": {
+          "overall": ["Accessibility Shortcut", "Siri", "Guided Access", "Per App Setting"],
+          "auditory": ["Made for iPhone hearing devices", "Sound Recognition", "Headphone Accommodations", "Live Captions"],
+          "mobilityCognitive": ["Voice Control", "Switch Control", "AssistiveTouch", "Back Tap"],
+          "hearingAidCompatibility": "M3/T4",
+          "visual": ["VoiceOver", "Zoom", "Color Filters", "Spoken Content"]
+        },
+        "network": {
+          "4G": ["13", "4", "2", "5", "66", "46", "48"],
+          "wiFi": "Yes",
+          "FCCID": "BCG-E4000A",
+          "globalRoamingNetworks": {
+            "LTE Roaming": ["1", "3", "7", "20", "28", "12", "26"],
+            "GSM_UMTS": ["850", "900", "1700/2100", "1900", "2100 MHz"],
+            "GSM_EDGE": ["850", "900", "1800", "1900 Mhz"]
+          },
+          "5GUltraWideband": ["n260", "n261", "n77"]
+        },
+        "battery": {
+          "videoPlayback": "Up to 23 hrs.",
+          "type": "Built-in rechargeable lithium-ion battery",
+          "usageTime": {
+            "streamed": "Up to 20 hrs",
+            "audioPlayback": "Up to 75 hrs"
+          }
+        },
+        "camera": {
+          "rearCamera": "Main: 24 mm, ƒ/1.78 aperture, second-generation sensor-shift optical image stabilization, seven-element lens, 100% Focus Pixels",
+          "camera": "48MP"
+        },
+        "performance": {
+          "storage": ["128GB", "256GB", "512GB", "1TB"],
+          "operatingSystem": "Apple iOS"
+        },
+        "display": {
+          "screen": "Super Retina XDR display; 6.1-inch (diagonal) all-screen OLED display; 2556-by-1179-pixel resolution at 460 ppi"
+        }
+      },
+    {
+      "model": "Samsung Galaxy Z Fold 5",
+      "price": {
+        "256GB": 1799.99,
+        "512GB": 1919.99
+      },
+      "design": {
+        "colors": ["Phantom Black", "Cream", "Icy Blue"],
+        "height": "6.10 in",
+        "width": {
+          "folded": "2.64 in",
+          "unfolded": "5.11 in"
+        },
+        "notableMaterials": ["Foldable", "Armor Aluminum", "Gorilla® Glass Victus® 2"],
+        "ecoCertifications": "UL ECOLOGO",
+        "depth": {
+          "folded": "0.53 in",
+          "unfolded": "0.24 in"
+        },
+        "weight": "8.92 oz",
+        "chargingPort": "USB Type C"
+      },
+      "accessibility": {
+        "overall": ["Accessibility Shortcut", "Android Accessibility Suite", "Bixby"],
+        "auditory": ["Hearing Aid Support", "Live Caption", "Live Transcribe", "Real-Time Text", "Sound Amplifier", "Sound Notifications"],
+        "voiceAssistant": ["Bixby", "Google Assistant"],
+        "mobility": ["Switch Access"],
+        "hearingAidCompatibility": "M3/T3",
+        "visual": ["Magnification", "Text and display", "TalkBack", "Select to Speak"]
+      },
+      "battery": {
+        "standbyTime": "Up to 12.5 days",
+        "usageTime": {
+          "folded": "26 hours",
+          "unfolded": "23 hours"
+        },
+        "powershare": "Yes",
+        "battery": "4,400 mAh",
+        "fastCharge": "Up to 25W Super Fast Charging",
+        "wirelessCharging": "Fast Wireless Charging 2.0"
+      },
+      "network": {
+        "4G": ["2", "4", "5", "13", "48", "66"],
+        "wiFi": "802.11 a/b/g/n/ac/ax, Tri Band (2.4/5/6GHz), Wi-Fi 6E",
+        "SAR": {
+          "head": "1.16 W/Kg",
+          "body": "1.07 W/Kg",
+          "hotspot": "0.98 W/Kg",
+          "simul": "1.57 W/Kg"
+        },
+        "globalRoamingNetworks": {
+          "LTE Roaming": ["1", "3", "7", "20", "28", "12", "26"],
+          "GSM_UMTS": ["850", "900", "1700/2100", "1900", "2100 MHz"],
+          "GSM_EDGE": ["850", "900", "1800", "1900 Mhz"]
+        },
+        "FCCID": "A3LSMF946U",
+        "5GUltraWideband": ["n260", "n261", "n77"],
+        "worldDevice": "Yes"
+      },
+      "camera": {
+        "frontCamera": {
+          "main": "4MP FF F1.8 (Under Display Camera)",
+          "cover": "10MP FF F2.2"
+        },
+        "rearCamera": "(Wide) 50MP OIS AF F1.8 | (Tele 3X) 10MP OIS AF F2.4 | (Ultrawide) 12MP FF F2.2 + Flash",
+        "video": {
+          "front": "4K(3840 x 2160) @ 60fps",
+          "back": "4K(3840 x 2160) @ 60fps ,8K(7680 x 4320) @ 24fps"
+        },
+        "cameraModes": ["8K Video Recording", "Dual Preview, Flex Mode", "Director’s View", "Single Take", "Auto Framing", "Hyperlapse"]
+      },
+      "performance": {
+        "bluetooth": "5.3",
+        "processor": "Snapdragon 8 Gen 2 Mobile Platform for Galaxy | Octa-core 3.36GHz + 2.8GHz + 2.0GHz",
+        "operatingSystem": "Android 13.0 | One UI 5.1.1",
+        "expandableMemory": "No",
+        "memoryStorage": ["256/512GB ROM + 12GB LPDDR5X RAM"],
+        "hotspot": "Up to 10 devices (4G or 5G)"
+      },
+      "display": {
+        "screenSize": {
+          "main": "7.6 in",
+          "cover": "6.2 in"
+        },
+        "refreshRate": "120 Hz Adaptive",
+        "screenType": ["Dynamic AMOLED 2X", "Main: Samsung Ultra Thin Glass", "Cover: Gorilla® Glass Victus® 2"],
+        "aspectRatio": {
+          "main": "21.6:18 (2176 x 1812)",
+          "cover": "23.05:9 (2316 x 904)"
+        }
+      }
+    },{
+      "model": "Samsung Galaxy Z Flip 5",
+      "price": {
+        "256GB": 999.99,
+        "512GB": 1119.99
+      },
+      "design": {
+        "colors": ["Graphite", "Lavender", "Cream", "Mint"],
+        "dimensions": {
+          "heightFolded": "3.35 in",
+          "heightUnfolded": "6.50 in",
+          "width": "2.83 in",
+          "depthFolded": "0.59 in",
+          "depthUnfolded": "0.27 in"
+        },
+        "weight": "6.60 oz",
+        "materials": ["Foldable", "Armor Aluminum", "Gorilla® Glass Victus® 2"],
+        "chargingPort": "USB Type C",
+        "ecoCertifications": ["UL ECOLOGO"]
+      },
+      "accessibility": {
+        "auditory": ["Hearing Aid Support", "Live Caption", "Live Transcribe", "Real-Time Text", "Sound Amplifier", "Sound Notifications"],
+        "voiceAssistant": ["Bixby", "Google Assistant"],
+        "mobility": ["Switch Access"],
+        "hearingAidCompatibility": ["M3/T3"],
+        "visual": ["Magnification", "Text and display", "TalkBack", "Select to Speak"]
+      },
+      "battery": {
+        "standbyTime": "Up to 10 days",
+        "usageTime": "22 hours",
+        "powershare": "Yes",
+        "mAh": "3,700 mAh",
+        "fastCharge": "Up to 25W Super Fast Charging",
+        "wirelessCharging": "Fast Wireless Charging 2.0"
+      },
+      "network": {
+        "4G": ["2", "4", "5", "13", "48", "66"],
+        "wifi": "802.11 a/b/g/n/ac/ax, Tri Band (2.4/5/6GHz), WiFi 6E",
+        "FCCID": "A3LSMF731U",
+        "globalRoaming": {
+          "LTE": ["1", "3", "7", "8", "12", "18", "19", "20", "26", "28"],
+          "GSM/UMTS": ["Quad"],
+          "TDD LTE": ["38", "39", "40", "41"],
+          "5G": ["n78", "n257"]
+        },
+        "5GNationwide": ["n2", "n5", "n48", "n66"],
+        "5GUltraWideBand": {
+          "highBand": ["n260", "n261"],
+          "midBand": ["n77"]
+        },
+        "worldDevice": "Yes"
+      },
+      "camera": {
+        "frontCamera": "10MP FF F2.2",
+        "rearCamera": {
+          "wide": "12MP OIS AF F1.8",
+          "ultrawide": "12MP FF F2.2 + Flash"
+        },
+        "video": {
+          "front": "4K(3840 x 2160) @ 60fps",
+          "back": "4K(3840 x 2160) @ 60fps"
+        },
+        "cameraModes": [
+          "4K Video Recording",
+          "Dual Preview",
+          "Flex Mode",
+          "Director’s View",
+          "Single Take",
+          "Auto Framing",
+          "Hyperlapse"
+        ]
+      },
+      "performance": {
+        "bluetooth": "5.3",
+        "processor": "Snapdragon 8 Gen 2 Mobile Platform for Galaxy | Octa-core 3.36GHz + 2.8GHz + 2.0GHz",
+        "OS": "Android 13.0 | One UI 5.1.1",
+        "expandableMemory": "No",
+        "memoryStorage": {
+          "ROM": ["256GB", "512GB"],
+          "RAM": "8GB LPDDR5X"
+        },
+        "hotspot": "Up to 10 devices",
+        "security": ["Fingerprint sensor", "Facial recognition", "Knox Secure"]
+      },
+      "display": {
+        "screenSize": {
+          "main": "6.7 in",
+          "cover": "3.4 in"
+        },
+        "refreshRate": {
+          "main": "120 Hz Adaptive"
+        },
+        "screenType": {
+          "main": "Dynamic AMOLED 2X | Samsung Ultra Thin Glass",
+          "cover": "Gorilla® Glass Victus® 2"
+        },
+        "aspectRatio": {
+          "main": "22:9 (2640 x 1080)",
+          "cover": "4:3.85 (748 x 720)"
+        }
+      }
+    }
+]
