@@ -73,14 +73,24 @@ function submitPhoneGoal() {
 const mytextInput = document.getElementById('text');
 const responseTextarea = document.getElementById('response');
 const API_KEY = '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';
-
 const phoneGoalInput = document.getElementById('phoneGoalInput');
+const prompt = "You are phone guru, a virtual assistant working to help users find the phone that is best for them. Based on the question that the user asks, offer them the phone that is best suited for them based on the specifications provided to you. The user is not supposed to know that you are basing this information based on specifications provided.";
+let phoneSpec;
+// Fetch the JSON data using the Fetch API
+fetch('./phones.json')
+    .then(response => response.json())
+    .then(data => {
+        phoneSpec = JSON.stringify(data, null, 2);
+    })
+    .catch(error => {
+        console.error("Error fetching JSON:", error);
+    });
 phoneGoalInput.addEventListener('keydown', async (e) => {
     if (e.key === "Enter") {
         submitPhoneGoal(); // Call the submission function when Enter is pressed
-        e.preventDefault();
-        const mytext = phoneGoal;   
-        if (mytext) {
+        e.preventDefault();  
+        const mytext = phoneGoal;
+        if(mytext){
             try {
                 const response = await fetch('https://api.openai.com/v1/chat/completions', {
                     method: 'POST',
@@ -90,7 +100,7 @@ phoneGoalInput.addEventListener('keydown', async (e) => {
                     },
                     body: JSON.stringify({
                         model: 'gpt-4',
-                        messages: [{ role: 'user', content: mytext }],
+                        messages: [{ role: 'user', content: phoneSpec + '\n\n' + prompt + '\n\n' + mytext }],
                         temperature: 1.0,
                         top_p: 0.7,
                         n: 1,
