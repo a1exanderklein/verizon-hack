@@ -59,7 +59,6 @@
             <div id="freeResponse">
                 <h3>Are there any other features you want?</h3>
                 <input type="text" id="phoneGoalInput" placeholder="I want a phone for...">
-                <button type="button" onclick="processPhoneGoal()">Enter</button>
             </div>
             <div style="margin-top: 30px;">
                 <button>"Just texting and calling"</button>
@@ -70,6 +69,7 @@
             <h1>Response:</h1>
             <textarea id="response" readonly></textarea>
         </section>
+        <button id="endBtn" onclick="processPhoneGoal()">Find me my perfect phone!</button>
         <button id="backBtn" onclick="goBack()">Back</button>
     </section>
 
