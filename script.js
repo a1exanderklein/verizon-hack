@@ -134,7 +134,7 @@ async function processPhoneGoal() {
 // Attach the event listener
 phoneGoalInput.addEventListener('keydown', async (e) => {
     if (e.key === "Enter") {
-        submitPhoneGoal(); // Call the submission function when Enter is pressed
+        // submitPhoneGoal(); // Call the submission function when Enter is pressed
         e.preventDefault();  
         await processPhoneGoal();
     }
