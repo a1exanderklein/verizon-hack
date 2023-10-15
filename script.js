@@ -5,6 +5,12 @@ let experience = '';
 let phoneGoal = '';
 let price = '';
 let currentPriceId = '';
+let storage = '';
+let currentStorageID = '';
+let currentBrandID = '';
+let brand = '';
+let currentColorID = '';
+let color = '';
 
 function setExperience(level) {
     experience = level;
@@ -24,6 +30,48 @@ function setPrice(Newprice, id) {
     document.getElementById(id).style.border = '5px solid #ee0000';
 
     currentPriceId = id;
+}
+
+function setStorage(NewStorage, id) {
+    if (price !== ''){
+        document.getElementById(currentStorageID).style.color = '#383434';
+        document.getElementById(currentStorageID).style.border = '5px solid #383434';
+
+    }
+    
+    storage = NewStorage; 
+    document.getElementById(id).style.color = '#ee0000';
+    document.getElementById(id).style.border = '5px solid #ee0000';
+
+    currentStorageID = id;
+}
+
+function setBrand(NewBrand, id) {
+    if (price !== ''){
+        document.getElementById(currentBrandID).style.color = '#383434';
+        document.getElementById(currentBrandID).style.border = '5px solid #383434';
+
+    }
+    
+    brand = NewBrand; 
+    document.getElementById(id).style.color = '#ee0000';
+    document.getElementById(id).style.border = '5px solid #ee0000';
+
+    currentBrandID = id;
+}
+
+function setColor(NewColor, id) {
+    if (price !== ''){
+        document.getElementById(currentColorID).style.color = '#383434';
+        document.getElementById(currentColorID).style.border = '5px solid #383434';
+
+    }
+    
+    color = NewColor; 
+    document.getElementById(id).style.color = '#ee0000';
+    document.getElementById(id).style.border = '5px solid #ee0000';
+
+    currentColorID = id;
 }
 
 function goSection(id) {
@@ -108,7 +156,7 @@ async function processPhoneGoal() {
                 },
                 body: JSON.stringify({
                     model: 'gpt-4',
-                    messages: [{ role: 'user', content: phoneSpec + '\n\n' + prompt + '\n\n' + "The user's experience is " + experience + '\n\n' + mytext }],
+                    messages: [{ role: 'user', content: phoneSpec + '\n\n' + prompt + '\n\n' + "The user's experience is " + experience + '\n\n' + "they are looking for a phone within the " + price + " price range" + " with a storage plan of " + storage + ", they prefer their phone brand to be " + brand + " and the color to be " + color + '\n\n' + mytext }],
                     temperature: 1.0,
                     top_p: 0.7,
                     n: 1,
