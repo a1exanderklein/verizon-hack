@@ -9,27 +9,42 @@
 </head>
 <body>
     <section id="questionIntro">
-        <h1>Hello, I'm Phone Guru!</h1>
-        <h3>How experienced are you with smartphones?</h3>
-        <!-- Experience level determines prompt path for the AI -->
-        <button id="beginnerBtn" onclick="setExperience('beginner')">I'm not familiar at all</button>
-        <button id="intermediateBtn" onclick="setExperience('intermediate')">Somewhat comfortable</button>
-        <button id="expertBtn" onclick="setExperience('expert')">I'm very experienced</button>
+        <div class="image-container">
+            <img src="assets/guru.png" alt="Phone Guru">
+        </div>
+        <div class="text-container">
+            <div class="heading-container">
+                <h1>Hello, I'm Phone Guru!</h1>
+                <h3>How experienced are you with smartphones?</h3>
+            </div>
+            <!-- Experience level determines prompt path for the AI -->
+            <div class="button-container">
+                <button id="beginnerBtn" onclick="setExperience('beginner')">I'm not familiar at all</button>
+                <button id="intermediateBtn" onclick="setExperience('intermediate')">Somewhat comfortable</button>
+                <button id="expertBtn" onclick="setExperience('expert')">I'm very experienced</button>
+            </div>
+        </div>
     </section>
 
     <section id="questionPhoneGoal" style="display: none;">
-        <h1>What are you looking for in a phone?</h1>
-        <input type="text" id="phoneGoalInput" placeholder="I want a phone for...">
-        <button type="button" onclick="goBack()">Go Back</button>
-        <div>
-            <button>"Just texting and calling"</button>
-            <button>"A stellar camera"</button>
-            <button>"A long battery life"</button>
+        <div class="image-container">
+            <img src="assets/guru.png" alt="Phone Guru">
+        </div>
+        <div class="text-container">
+            <div class="heading-container">
+                <h1>What are you looking for in a phone?</h1>
+                <input type="text" id="phoneGoalInput" placeholder="I want a phone for...">
+            </div>
+            <button id="backBtn" type="button" onclick="goBack()">Go Back</button>
+            <div class="button-container">
+                <button>"Just texting and calling"</button>
+                <button>"A stellar camera"</button>
+                <button>"A long battery life"</button>
+            </div>
         </div>
         <section id="phoneGoalResponse" style="display: none;">
             <h1>Response:</h1>
             <textarea id="response" readonly></textarea>
-            <!-- <button onclick="goBack()">Go Back</button> -->
         </section>
     </section>
 

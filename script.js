@@ -21,7 +21,7 @@ function goSection(id) {
     currentSectionId = id;
 
     // Show the selected section
-    document.getElementById(currentSectionId).style.display = 'block';
+    document.getElementById(currentSectionId).style.display = 'flex';
 }
 
 function goBack() {
@@ -41,7 +41,7 @@ function goBack() {
     }
 
     // Show the previous section
-    document.getElementById(currentSectionId).style.display = 'block';
+    document.getElementById(currentSectionId).style.display = 'flex';
 }
 
 function checkEnter(event) {
@@ -54,7 +54,7 @@ function submitPhoneGoal() {
     // Get the user's input from the input field
     phoneGoal = document.getElementById('phoneGoalInput').value;
     console.log('User entered: ' + phoneGoal);
-    document.getElementById('phoneGoalResponse').style.display = 'block';
+    document.getElementById('phoneGoalResponse').style.display = 'flex';
     // goSection('phoneGoalResponse');    
 
     // const submitEvent = new Event('submit');
