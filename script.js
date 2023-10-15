@@ -117,15 +117,12 @@ function submitPhoneGoal() {
     phoneGoal = document.getElementById('phoneGoalInput').value;
     console.log('User entered: ' + phoneGoal);
     document.getElementById('phoneGoalResponse').style.display = 'flex';
-    // goSection('phoneGoalResponse');    
-
-    // const submitEvent = new Event('submit');
-    // document.getElementById('chat-form').dispatchEvent(submitEvent);
-
-    // Clear the input field
     document.getElementById('phoneGoalInput').value = '';
+    document.querySelector('html').scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 }
-
 
 const mytextInput = document.getElementById('text');
 const responseTextarea = document.getElementById('response');
@@ -174,8 +171,5 @@ async function processPhoneGoal() {
     } catch (error) {
         console.error(error);
         responseTextarea.value = 'Error: Unable to process your request.';
+    }
 }
-}
-
-// Call the function elsewhere
-// processPhoneGoal();

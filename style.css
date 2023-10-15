@@ -18,9 +18,15 @@ body {
     padding: 20vh 15vw;
 }
 
+#questionIntro img {
+    max-width: 100%;
+    height: auto;
+}
+
 #questionPhoneGoal {
     padding: 3vh 3vw;
     max-height: 100%;
+    align-items: baseline;
 }
 
 .image-container {
@@ -33,10 +39,6 @@ body {
     flex-direction: column;
 }
 
-#questionIntro img {
-    max-width: 100%;
-    height: auto;
-}
 
 .button-container {
     display: flex;
@@ -47,6 +49,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+#responseContainer {
+    right: 10px;
+    top: 10px;
+    height: 100%;
+    width: 40%;
+    overflow-y: visible;
 }
 
 #backBtn {
@@ -126,4 +136,15 @@ textarea {
     font-size: 30px;
     color: #383434;
 }
-  
+
+.left-container {
+    flex: 2;
+}
+
+.right-container {
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    max-height: 100%;
+    overflow-y: visible;
+}
