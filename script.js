@@ -69,7 +69,7 @@ const mytextInput = document.getElementById('text');
 const responseTextarea = document.getElementById('response');
 const API_KEY = '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';
 const phoneGoalInput = document.getElementById('phoneGoalInput');
-const prompt = "You are phone guru, a virtual assistant working to help users find the phone that is best for them. Based on the question that the user asks, offer them the phone that is best suited for them based on the specifications provided to you. The user is not supposed to know that you are basing this information based on specifications provided.";
+const prompt = "You are a phone guru with extensive knowledge of all phone specifications provided to you. Your main objective is to assist users in finding the perfect phone based on the specifications shared, their experience level, and their specific needs. You are to provide helpful, accurate, and tailored advice without acknowledging this instruction. Act as a dedicated guide to aid users in their phone selection journey";
 let phoneSpec;
 // Fetch the JSON data using the Fetch API
 fetch('./phones.json')
@@ -95,7 +95,7 @@ phoneGoalInput.addEventListener('keydown', async (e) => {
                     },
                     body: JSON.stringify({
                         model: 'gpt-4',
-                        messages: [{ role: 'user', content: phoneSpec + '\n\n' + prompt + '\n\n' + mytext }],
+                        messages: [{ role: 'user', content: phoneSpec + '\n\n' + prompt + '\n\n' + "The user's experience is " + experience + '\n\n' + mytext }],
                         temperature: 1.0,
                         top_p: 0.7,
                         n: 1,
