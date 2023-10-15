@@ -19,7 +19,7 @@ body {
 }
 
 #questionPhoneGoal {
-    padding: 3vh 5vw;
+    padding: 3vh 3vw;
     max-height: 100%;
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 #backBtn {
-    position: fixed;
+    position: absolute;
     bottom: 5%; /* Adjust this percentage to your preference */
     right: 1%; /* Adjust this percentage to your preference */
 }
